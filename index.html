@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AImail - Risposte Email Professionali con AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .feature-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .testimonial-card { transition: transform 0.3s ease; }
+        .testimonial-card:hover { transform: scale(1.02); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">AI</span>
+                    </div>
+                    <span class="ml-3 text-2xl font-bold text-gray-900">AImail</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">Funzionalità</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors">Vantaggi</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors">Testimonianze</a>
+                </nav>
+                <button onclick="window.open('https://aimailsmartbusiness.gumroad.com/l/gdcsb?layout=profile', '_blank')" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                    Acquista Ora
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    Risposte Email <span class="text-yellow-300">Professionali</span><br>
+                    in Pochi Secondi
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+                    Trasforma le tue email ricevute in risposte perfette con l'intelligenza artificiale. 
+                    Scegli il tono, la lingua e ottieni risultati professionali istantaneamente.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="window.open('https://aimailsmartbusiness.gumroad.com/l/gdcsb?layout=profile', '_blank')" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                        Acquista AImail
+                    </button>
+                    <button onclick="document.getElementById('demo').scrollIntoView({behavior: 'smooth'})" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+                        Vedi Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Come Funziona AImail</h2>
+                <p class="text-gray-600 text-lg">Semplice, veloce ed efficace</p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Input Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">1. Incolla la tua email</h3>
+                        <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg resize-none" placeholder="Incolla qui l'email ricevuta...">Ciao,
+
+Volevo sapere se è possibile organizzare una riunione per discutere del nuovo progetto. Quando saresti disponibile la prossima settimana?
+
+Grazie,
+Marco</textarea>
+                        
+                        <div class="mt-4 grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Tono</label>
+                                <select class="w-full p-3 border border-gray-300 rounded-lg">
+                                    <option>Professionale</option>
+                                    <option>Amichevole</option>
+                                    <option>Assertivo</option>
+                                    <option>Formale</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Lingua</label>
+                                <select class="w-full p-3 border border-gray-300 rounded-lg">
+                                    <option>Italiano</option>
+                                    <option>Inglese</option>
+                                    <option>Spagnolo</option>
+                                    <option>Francese</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors">
+                            🚀 Genera Risposta
+                        </button>
+                    </div>
+                    
+                    <!-- Output Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">2. Ottieni la risposta perfetta</h3>
+                        <div class="bg-white p-4 border border-gray-300 rounded-lg h-32 overflow-y-auto">
+                            <p class="text-gray-800">Caro Marco,</p>
+                            <br>
+                            <p class="text-gray-800">Grazie per il tuo messaggio. Sarò felice di organizzare una riunione per discutere del nuovo progetto.</p>
+                            <br>
+                            <p class="text-gray-800">La prossima settimana sono disponibile martedì alle 14:00 o giovedì alle 10:00. Fammi sapere quale orario preferisci.</p>
+                            <br>
+                            <p class="text-gray-800">Cordiali saluti</p>
+                        </div>
+                        
+                        <div class="mt-4 flex gap-2">
+                            <button class="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg font-medium transition-colors">
+                                📋 Copia
+                            </button>
+                            <button class="flex-1 bg-gray-600 hover:bg-gray-700 text-white py-2 rounded-lg font-medium transition-colors">
+                                🔄 Rigenera
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Funzionalità Avanzate</h2>
+                <p class="text-xl text-gray-600">Tutto quello che ti serve per email perfette</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-2xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Toni Personalizzati</h3>
+                    <p class="text-gray-600">Scegli tra professionale, amichevole, assertivo o formale per adattare la risposta al contesto perfetto.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Multilingua</h3>
+                    <p class="text-gray-600">Genera risposte in italiano, inglese, spagnolo e francese con perfetta fluidità linguistica.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Velocità Istantanea</h3>
+                    <p class="text-gray-600">Ottieni risposte professionali in pochi secondi, risparmiando ore di scrittura ogni settimana.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-2xl">🧠</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">AI Contestuale</h3>
+                    <p class="text-gray-600">L'intelligenza artificiale comprende il contesto e genera risposte sempre appropriate e pertinenti.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-2xl">📝</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Editing Facile</h3>
+                    <p class="text-gray-600">Copia, modifica e rigenera le risposte fino a ottenere il risultato perfetto per ogni situazione.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-2xl">🔒</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Privacy Garantita</h3>
+                    <p class="text-gray-600">I tuoi dati sono al sicuro. Nessuna email viene salvata o condivisa con terze parti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Perché Scegliere AImail</h2>
+                <p class="text-xl text-gray-600">I vantaggi che trasformeranno la tua comunicazione</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold mb-2">Risparmia 5+ Ore a Settimana</h3>
+                                <p class="text-gray-600">Non perdere più tempo a pensare alla risposta perfetta. AImail lo fa per te in secondi.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold mb-2">Professionalità Garantita</h3>
+                                <p class="text-gray-600">Ogni risposta è curata nei minimi dettagli per mantenere sempre un'immagine professionale.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold mb-2">Elimina lo Stress</h3>
+                                <p class="text-gray-600">Basta ansia da pagina bianca. Hai sempre la risposta giusta a portata di clic.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <span class="text-white text-sm">✓</span>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-semibold mb-2">Migliora le Relazioni</h3>
+                                <p class="text-gray-600">Risposte sempre appropriate e tempestive migliorano i rapporti con clienti e colleghi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-white text-3xl">📈</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Risultati Misurabili</h3>
+                        <div class="grid grid-cols-2 gap-6 mt-8">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600">90%</div>
+                                <div class="text-sm text-gray-600">Tempo Risparmiato</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-purple-600">100%</div>
+                                <div class="text-sm text-gray-600">Professionalità</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-green-600">4</div>
+                                <div class="text-sm text-gray-600">Lingue Supportate</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-orange-600">∞</div>
+                                <div class="text-sm text-gray-600">Email Processate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Cosa Dicono i Nostri Utenti</h2>
+                <p class="text-xl text-gray-600">Storie di successo reali</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-semibold">MR</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Giancarlo Giangiacomo</h4>
+                            <p class="text-gray-600 text-sm">CEO, TechStart</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-700">"AImail ha rivoluzionato la mia gestione email, in un modo che non mi sarei mai aspettato. Risparmio almeno 2 ore al giorno e le mie risposte sono sempre perfette. Incredibile, non pensavo si sarebbe rivelato così utile!"</p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-semibold">LB</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Laura Bianchi</h4>
+                            <p class="text-gray-600 text-sm">Marketing Manager</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-700">"La funzione multilingua è fantastica! Gestisco clienti da tutta l'Europa e AImail mi permette di rispondere in modo professionale, usando anche espressioni locali. Stra consigliato come servizio."</p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-semibold">GV</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Luca Polini</h4>
+                            <p class="text-gray-600 text-sm">Consulente</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-gray-700">"Non torno più indietro! AImail mi ha liberato dallo stress delle email difficili, ogni volta dover pensare e rileggere per ore risposte che a volte nemmeno venivano lette. Ora ogni risposta è perfetta e arriva in tempo record. Il mio open rate è aumentato sensibilmente. Complimenti per il rapporto qualità prezzo, completamente favorevole."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Pronto a Trasformare le Tue Email?</h2>
+            <p class="text-xl mb-8 text-blue-100">Unisciti a migliaia di professionisti che hanno già scelto AImail</p>
+            <button onclick="window.open('https://aimailsmartbusiness.gumroad.com/l/gdcsb?layout=profile', '_blank')" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                Acquista Ora
+            </button>
+        </div>
+    </section>
+
+</body>
+</html>
