@@ -40,6 +40,7 @@
                     <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors">Funzionalità</a>
                     <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors">Vantaggi</a>
                     <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors">Testimonianze</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors">FAQ</a>
                 </nav>
                 <button onclick="window.open('https://aimailtech.gumroad.com/l/gdcsb?layout=profile', '_blank')" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
                     Acquista Ora
@@ -356,6 +357,94 @@ Marco</textarea>
             </div>
         </div>
     </section>
+
+<!-- FAQ Section con Accordion -->
+<section id="faq" class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Domande Frequenti</h2>
+      <p class="mt-4 text-lg text-gray-600">Tutto quello che c’è da sapere prima di iniziare</p>
+    </div>
+
+    <div class="space-y-4">
+      <!-- FAQ Item -->
+      <div class="faq-item border border-gray-200 rounded-lg shadow-sm">
+        <button class="faq-question w-full flex justify-between items-center px-6 py-4 text-left text-lg font-medium text-gray-900">
+          Devo avere competenze tecniche per usare AImail?
+          <span class="faq-icon text-gray-500">+</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-4 text-gray-600">
+          Assolutamente no. AImail è stato progettato per essere semplice e intuitivo: basta incollare l’email e scegliere la lingua e il tono più appropriati. Il resto lo fa l’intelligenza artificiale.
+        </div>
+      </div>
+
+      <div class="faq-item border border-gray-200 rounded-lg shadow-sm">
+        <button class="faq-question w-full flex justify-between items-center px-6 py-4 text-left text-lg font-medium text-gray-900">
+          Posso usare AImail in più lingue?
+          <span class="faq-icon text-gray-500">+</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-4 text-gray-600">
+          Sì. Attualmente supportiamo italiano, inglese, spagnolo e francese, con altri idiomi in arrivo. Inoltre i nostri modelli supportano anche l'uso di espressioni e detti locali, rendendo le vostre risposte in lingua straniera ancora più efficaci e professionali.
+        </div>
+      </div>
+
+      <div class="faq-item border border-gray-200 rounded-lg shadow-sm">
+        <button class="faq-question w-full flex justify-between items-center px-6 py-4 text-left text-lg font-medium text-gray-900">
+          I miei dati e le mie informazioni sono al sicuro?
+          <span class="faq-icon text-gray-500">+</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-4 text-gray-600">
+          Sì, la tua privacy è la nostra priorità. Nessuna email viene salvata o condivisa con terze parti, la cronologia sarà disponibile solo in app.
+        </div>
+      </div>
+
+      <div class="faq-item border border-gray-200 rounded-lg shadow-sm">
+        <button class="faq-question w-full flex justify-between items-center px-6 py-4 text-left text-lg font-medium text-gray-900">
+          Perchè dovrei scegliere AImail e non Chat GPT?
+          <span class="faq-icon text-gray-500">+</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-4 text-gray-600">
+          Il tool è progettato per rispondere alle e-mail semplicemente cliccando dei bottoni, senza scrivere nessun comando, vantaggio non disponibile in chat GPT. Inoltre, il nostro tool garantisce l'accesso a modelli di intelligenza artificiale più avanzati e ad un costo nettamente inferiore. 
+        </div>
+      </div>
+
+<div class="faq-item border border-gray-200 rounded-lg shadow-sm">
+  <button class="faq-question w-full flex justify-between items-center px-6 py-4 text-left text-lg font-medium text-gray-900">
+    Come posso usare AImail al meglio?
+    <span class="faq-icon text-gray-500">+</span>
+  </button>
+  <div class="faq-answer hidden px-6 pb-4 text-gray-600">
+    Una volta completato l'acquisto di AImail, oltre a ricevere un servizio di onboarding personalizzato, otterrai anche un manuale d'uso, al cui interno potrai trovare tutte le informazioni necessarie, le tecniche e i metodi migliori per rendere la tua esperienza con il tool unica.
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Script FAQ Accordion -->
+<script>
+  document.querySelectorAll(".faq-question").forEach((button) => {
+    button.addEventListener("click", () => {
+      const faqItem = button.parentElement;
+      const answer = faqItem.querySelector(".faq-answer");
+      const icon = button.querySelector(".faq-icon");
+
+      // Chiude eventuali altre FAQ aperte
+      document.querySelectorAll(".faq-answer").forEach((el) => {
+        if (el !== answer) {
+          el.classList.add("hidden");
+          el.previousElementSibling.querySelector(".faq-icon").textContent = "+";
+        }
+      });
+
+      // Toggle FAQ cliccata
+      answer.classList.toggle("hidden");
+      icon.textContent = answer.classList.contains("hidden") ? "+" : "−";
+    });
+  });
+</script>
+
 
     <!-- CTA Section -->
     <section class="py-16 gradient-bg text-white">
